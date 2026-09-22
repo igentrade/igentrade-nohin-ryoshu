@@ -18,10 +18,14 @@
 - 領収書の但し書き・支払方法
 - 下書きをブラウザ内に保存（外部送信なし）
 
-## 関連ツール
 
-- [見積書・請求書メーカー](https://github.com/igentrade/igentrade-seikyu)  
-  デモ: https://igentrade.github.io/igentrade-seikyu/
+## 関連ツール（iGenTrade 無料）
+
+- [見積書・請求書](https://github.com/igentrade/igentrade-seikyu) — https://igentrade.github.io/igentrade-seikyu/
+- [納品書・領収書](https://github.com/igentrade/igentrade-nohin-ryoshu) — https://igentrade.github.io/igentrade-nohin-ryoshu/
+- [消費税計算機](https://github.com/igentrade/igentrade-shohizei) — https://igentrade.github.io/igentrade-shohizei/
+- [為替・概算コスト](https://github.com/igentrade/igentrade-kawase) — https://igentrade.github.io/igentrade-kawase/
+- [営業日計算機](https://github.com/igentrade/igentrade-eigyobi) — https://igentrade.github.io/igentrade-eigyobi/
 
 ## デモ（GitHub Pages）
 
