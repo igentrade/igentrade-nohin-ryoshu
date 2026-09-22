@@ -246,3 +246,20 @@ body {
 .panel a { color: var(--accent); }
 .site-foot a { color: var(--accent); text-decoration: none; }
 .site-foot a:hover { text-decoration: underline; }
+
+
+.toggle-brand {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin: .75rem 0 .25rem;
+  font-size: .82rem;
+  color: var(--muted);
+}
+.toggle-brand input {
+  width: auto;
+  margin: 0;
+}
+.brand-foot.is-hidden {
+  display: none !important;
+}

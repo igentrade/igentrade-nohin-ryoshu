@@ -159,6 +159,14 @@ function applyDocDefaults() {
   refreshPreview();
 }
 
+
+function syncBrandFoot() {
+  const foot = el("brandFoot");
+  const on = el("showBrand") && el("showBrand").checked;
+  if (!foot) return;
+  foot.classList.toggle("is-hidden", !on);
+}
+
 function bind() {
   el("issueDate").value = todayISO();
   el("sellerName").value = "合同会社威源国際貿易";
@@ -207,6 +215,8 @@ function bind() {
     "notes",
   ].forEach((id) => el(id).addEventListener("input", refreshPreview));
 
+  el("showBrand").addEventListener("change", syncBrandFoot);
+  syncBrandFoot();
   el("printBtn").addEventListener("click", () => window.print());
   el("saveLocal").addEventListener("click", () => {
     localStorage.setItem(stateKey, JSON.stringify(readForm()));

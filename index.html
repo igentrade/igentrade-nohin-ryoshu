@@ -89,6 +89,11 @@
         <textarea id="notes" rows="3"></textarea>
       </label>
 
+            <label class="toggle-brand">
+        <input type="checkbox" id="showBrand" />
+        書類フッターに提供元を表示（通常はオフ推奨）
+      </label>
+
       <div class="actions">
         <button type="button" id="saveLocal" class="btn secondary">下書き保存</button>
         <button type="button" id="loadLocal" class="btn secondary">下書き読込</button>
@@ -166,7 +171,7 @@
           <p id="pNotes"></p>
         </div>
 
-        <footer class="sheet-foot">
+        <footer class="sheet-foot brand-foot is-hidden" id="brandFoot">
           <p>本ツールは <strong>合同会社威源国際貿易（iGenTrade）</strong> が中小企業向けに無料提供しています。</p>
           <p class="url">公式サイト: https://www.igentrade.com/</p>
           <p class="url">https://github.com/igentrade/igentrade-nohin-ryoshu</p>
