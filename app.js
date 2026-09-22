@@ -217,7 +217,10 @@ function bind() {
 
   el("showBrand").addEventListener("change", syncBrandFoot);
   syncBrandFoot();
-  el("printBtn").addEventListener("click", () => window.print());
+  el("printBtn").addEventListener("click", () => {
+    if (typeof window.iGenTradeRecordTry === "function") window.iGenTradeRecordTry();
+    window.print();
+  });
   el("saveLocal").addEventListener("click", () => {
     localStorage.setItem(stateKey, JSON.stringify(readForm()));
     alert("下書きをこのブラウザに保存しました。");
